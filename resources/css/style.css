@@ -1,3 +1,6 @@
+/* ************************************ */
+/* GENERAL HTML ELEMENT STYLE DEFITIONS */
+/* ************************************ */
 
 body {
   margin: 0;
@@ -12,6 +15,8 @@ header {
   font-weight: bold;
   height: 80px;
   border-bottom: 1px solid black;
+  background: white;
+  z-index: 5;
 }
 
 nav {
@@ -27,6 +32,32 @@ nav li a {
   color: black;
 }
 
+main {
+  display: flex;
+  position: relative;
+  top: 118px;
+  width: 1232px;
+  margin: 0 auto;
+}
+
+main div {
+  /*border: 1px solid #354551;*/
+}
+
+p {
+  display: block;
+}
+
+h2 {
+  display: block;
+  font-family: Georgia;
+  font-size: 30px;
+}
+
+/* ******************************* */
+/* HEADER SECTION STYLE DEFINTIONS */
+/* ******************************* */
+
 .logo {
   display: flex;
   align-items: center;
@@ -41,6 +72,109 @@ nav li a {
   margin-right: 12px;
 }
 
-.main_content div {
-  border: 1px solid #354551;
+/* ******************************** */
+/* CONTENT SECTION STYLE DEFINTIONS */
+/* ******************************** */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  display: flex;
+  width: 630px;
+}
+
+.column.medium {
+  display: flex;
+  width: 300px;
+}
+
+.column.small {
+  display: flex;
+  width: 240px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.image-content span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.mother-of-three {
+  background: url("../images/img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.mother-of-three span {
+  margin-left: 20px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.fall-cancelled {
+  background: url("../images/img-story-2.png");
+  display: flex;
+}
+
+.pop-culture {
+  background: url("../images/img-story-3.png");
+  display: flex;
+}
+
+.cat-ceo {
+  background: url("../images/img-story-1.png");
+  display: flex;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
 }
