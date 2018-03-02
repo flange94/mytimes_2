@@ -1,10 +1,11 @@
-/* ************************************ */
-/* GENERAL HTML ELEMENT STYLE DEFITIONS */
-/* ************************************ */
+/* ************************************** */
+/* GENERAL HTML ELEMENT STYLE DEFINITIONS */
+/* ************************************** */
 
 body {
   margin: 0;
 }
+
 header {
   display: flex;
   position: fixed;
@@ -37,11 +38,7 @@ main {
   position: relative;
   top: 118px;
   width: 1232px;
-  margin: 0 auto;
-}
-
-main div {
-  /*border: 1px solid #354551;*/
+  margin: 0 auto 150px auto;
 }
 
 p {
@@ -54,9 +51,22 @@ h2 {
   font-size: 30px;
 }
 
-/* ******************************* */
-/* HEADER SECTION STYLE DEFINTIONS */
-/* ******************************* */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+/* ******************************** */
+/* HEADER SECTION STYLE DEFINITIONS */
+/* ******************************** */
 
 .logo {
   display: flex;
@@ -72,9 +82,9 @@ h2 {
   margin-right: 12px;
 }
 
-/* ******************************** */
-/* CONTENT SECTION STYLE DEFINTIONS */
-/* ******************************** */
+/* ********************************* */
+/* CONTENT SECTION STYLE DEFINITIONS */
+/* ********************************* */
 
 .column {
   display: flex;
@@ -177,4 +187,32 @@ h2 {
   color: DimGray;
   border-bottom: 1px solid black;
   padding: 11px 20px;
+}
+
+/* ******************************** */
+/* FOOTER SECTION STYLE DEFINITIONS */
+/* ******************************** */
+
+.title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+footer nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: black;
 }
